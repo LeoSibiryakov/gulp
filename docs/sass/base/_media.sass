@@ -59,3 +59,52 @@
         font-size: 14px
     .reviews__descr
         font-size: 14px
+
+@media (max-width:576px)
+    .header
+        &__official 
+        &__contacts
+            display: none
+    .promo
+        &__header
+            font-size: 30px
+            text-align: center
+        &__subheader
+            text-align: center
+        &__icons
+            width: 290px
+        &__link
+            font-size: 12px
+    .button
+        &_main
+            width: auto
+            font-size: 12px
+    .hamburger
+        display: block
+        position: fixed
+        right: 10px
+        top: 27px
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+
+        span
+            display: block
+            height: 5px
+            width: 100%
+            background-color: #c70101
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)  
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
