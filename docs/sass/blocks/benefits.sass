@@ -53,3 +53,23 @@
             animation: heartbeat 1s ease infinite
             &:hover
                 animation-play-state: paused
+@media (max-width: 991px)
+    .benefits__block
+        justify-content: space-evenly
+@media (max-width: 768px)
+    .benefits
+        &__block
+            flex-direction: column
+            padding: 0 2rem
+            margin-top: 2rem
+        &__blocks
+            margin-right: 0
+            margin-bottom: 20px
+        &__text
+            max-width: 100%
+            justify-content: center
+        &__subheader
+            margin-top: 20px
+            font-size: 14px
+        .title
+            font-size: 20px
